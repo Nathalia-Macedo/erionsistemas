@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Erion Sistemas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&family=Sanchez&family=Square+Peg&display=swap" rel="stylesheet">    
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <meta name="description" content="Empresa brasileira, sediada no Estado do Pará. ​. Empenhada no desenvolvimento de softwares para gestão de negócios, inseridos no mercado há 4 anos.">
+</head>
+<body>
+   
+    <header class="header-bg" id="header">
+        <div class="header container">
+            <a href="./index.html" id="logo">
+                <img src="./img/logo/erion-sistemas.svg" alt="Erion Emissor">
+            </a>            
+            <nav aria-label="primaria" id="nav">
+                <ul class="header-menu font-1-nav cor-0" id="menu" role="menu">
+                    <li><a href="#sistema">Sistema</a></li>
+                    <li><a href="#vantagens">Vantagens</a></li>
+                    <li><a href="#segmentos">Segmentos</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="#contato">Contato</a></li>                    
+                </ul>
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span id="hamburguer"></span></button>               
+            </nav>
+           <a class="botao" href="https://api.whatsapp.com/send?phone=5593991216594&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20mais%20sobre%20o%20sistema%20Erion..." target="_blank" rel="noopener noreferrer">Fale Conosco</a>
+        </div>
+    </header>
+    
+    <article class="introducao-bg">
+        <div class="introducao container" id="introducao">
+            <div>
+                <h1 class="font-1-tittle cor-08">O <span class="cor-06">melhor sistema </span>para auxiliar no crescimento do seu negócio</h1>
+                <p class="font-2-tittle cor-02">Transforme suas vendas com nossas soluções de automação</p>
+                <a class="botao" href="https://api.whatsapp.com/send?phone=5593991216594&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20mais%20sobre%20o%20sistema%20Erion..." target="_blank" rel="noopener noreferrer">SOLICITE UM ORÇAMENTO</a>
+                <div class="introducao-caracteristicas">
+                    <div class="carac1">
+                        <img src="./img/icones/introducao/people.svg" alt="Clientes Erion">
+                        <span class="font-2-text cor-03">+2000 CLIENTES</span>
+                    </div>
+                    <div class="carac2">
+                        <img src="./img/icones/introducao/windows.svg" alt="Windows">
+                        <span class="font-2-text cor-03">DISPONÍVEL PARA WINDOWS</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img class="att" src="./img/icones/introducao/att.svg" alt="Atualização Erion"> 
+                <img class="main-img" src="./img/geral/introducao.jpg" alt="Notebook de Vendas">               
+                <img class="support" src="./img/icones/introducao/support.svg" alt="Suporte Erion">                 
+            </div>
+        </div>
+    </article>
+    
+    <article class="sistema container" id="sistema">
+        <span class="tag">Sistema</span>
+        <h2 class="font-1-sub cor-08">Confira as funcionalidades dos<br>sistemas <span class="cor-06">Erion Emissor</span> e <span class="cor-06">PDV</span></h2>
+        <div class="escolha-sistema">
+            <span onclick="sistema()" class="emissor" id="btn-emissor">Erion Emissor</span>
+            <span onclick="sistema()" class="pdv" id="btn-pdv">Erion PDV</span>
+        </div>     
+        <div class="card" id="card">
+            <div>
+                <img src="./img/icones/sistema/nf-e.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">NF-e / NFC-e</h3>
+                <p class="font-2-text">Emissão simplificada de NF-e (Nota Fiscal Eletrônica) e NFC-e (Nota Fiscal de Consumidor Eletrônica) para otimizar suas transações comerciais.</p>
+            </div>
+            <div>
+                <img src="./img/icones/sistema/shop.svg" alt="Vendas">
+                <h3 class="font-2-card">Vendas</h3>
+                <p class="font-2-text">Potencialize seus negócios com a função essencial de Vendas, proporcionando praticidade e eficiência em todas as transações.</p>
+            </div>
+            <div>
+                <img class="icones" src="./img/icones/sistema/estoque.svg" alt="Estoque">
+                <h3 class="font-2-card">Estoque</h3>
+                <p class="font-2-text">Controle total com a função de Estoque, garantindo uma gestão eficiente dos seus recursos para impulsionar o sucesso do seu negócio.</p>
+            </div>
+            <div>
+                <img src="./img/icones/sistema/caixa.svg" alt="Caixa">
+                <h3 class="font-2-card">Caixa</h3>
+                <p class="font-2-text">Gerencie suas transações financeiras de forma eficaz com o Caixa, assegurando controle e clareza em todas as movimentações.</p>
+            </div>
+            <div>
+                <img src="./img/icones/sistema/car.svg" alt="MDF-e / CT-e">
+                <h3 class="font-2-card">MDF-e / CT-e</h3>
+                <p class="font-2-text">Simplifique a gestão logística com Manifesto Eletrônico de Documentos Fiscais e Conhecimento de Transporte Eletrônico, garantindo eficiência e conformidade em suas operações de transporte.</p>
+            </div>
+            <div>
+                <img src="./img/icones/sistema/medication.svg" alt="SNGPC">
+                <h3 class="font-2-card">SNGPC</h3>
+                <p class="font-2-text">Atenda aos requisitos regulatórios com facilidade usando a integração do Sistema Nacional de Gerenciamento de Produtos Controlados, garantindo conformidade e eficácia na gestão de produtos controlados.</p>
+            </div>
+            <div>
+                <img class="icones" src="./img/icones/sistema/ordem_servico.svg" alt="Ordem de Serviço">
+                <h3 class="font-2-card">Ordem de Serviço</h3>
+                <p class="font-2-text">Otimize a execução de serviços com a funcionalidade de Ordem de Serviço, proporcionando uma gestão eficiente e organizada das atividades em seu negócio.</p>
+            </div>
+            <div>
+                <img class="icones" src="./img/icones/sistema/relatorios.svg" alt="Relatorios">
+                <h3 class="font-2-card">Relatórios</h3>
+                <p class="font-2-text">Tenha uma visão abrangente do seu negócio com a função de Relatórios, oferecendo insights valiosos para uma tomada de decisão informada e estratégica.</p>
+            </div>
+            <div>
+                <img class="icones" src="./img/icones/sistema/orca_condi.svg" alt="Orcamentos e Condicionais">
+                <h3 class="font-2-card">Orçamentos e Condicionais</h3>
+                <p class="font-2-text">Agilize seus processos de vendas com a funcionalidade de Orçamentos e Condicionais, proporcionando flexibilidade e praticidade na gestão comercial do seu negócio.</p>
+            </div>
+            <div>
+                <img class="icones" src="./img/icones/sistema/manifestacao.svg" alt="Manifestacao XML">
+                <h3 class="font-2-card">Manifestação de XML</h3>
+                <p class="font-2-text">Simplifique a gestão fiscal com a funcionalidade de Manifestação de XML, permitindo uma interação ágil e segura com os documentos eletrônicos essenciais para a sua operação.</p>
+            </div>
+            <div>
+                <img class="icones" src="./img/icones/sistema/etiqueta.svg" alt="Etiqueta">
+                <h3 class="font-2-card">Etiquetas</h3>
+                <p class="font-2-text">Personalize e simplifique a identificação de produtos com a impressão de etiquetas diretamente do sistema.</p>
+            </div>
+            <div>
+                <img class="icones" src="./img/icones/sistema/nuvem.svg" alt="Backup em Nuvem">
+                <h3 class="font-2-card">Backup em Nuvem</h3>
+                <p class="font-2-text">Garanta a segurança dos seus dados com nosso serviço de backup, oferecendo uma solução confiável para preservar as informações essenciais do seu negócio.</p>
+            </div>
+        </div>
+        
+        <div class="card-pdv" id="card-pdv">
+            <div>
+                <img src="./img/icones/sistema/shop.svg" alt="Vendas">
+                <h3 class="font-2-card">Vendas</h3>
+                <p class="font-2-text">Potencialize seus negócios com a função essencial de Vendas, proporcionando praticidade e eficiência em todas as transações.</p>
+            </div>
+            <div>
+                <img src="./img/icones/sistema/nf-e.svg" alt="Cupom fiscal">
+                <h3 class="font-2-card">NFC-e</h3>
+                <p class="font-2-text">Emissão simplificada de NFC-e (Nota Fiscal de Consumidor Eletrônica).</p>
+            </div>
+            <div>
+                <img src="./img/icones/sistema/caixa.svg" alt="Caixa">
+                <h3 class="font-2-card">Caixa</h3>
+                <p class="font-2-text">Gerencie suas transações financeiras de forma eficaz com o Caixa, assegurando controle e clareza em todas as movimentações.</p>
+            </div>
+            <div>
+                <img class="icones" src="./img/icones/sistema/balanca.svg" alt="Balanca">
+                <h3 class="font-2-card">Conexão com Balança</h3>
+                <p class="font-2-text">Integre-se perfeitamente às operações de pesagem com a funcionalidade de Conexão com Balanças, assegurando precisão e eficiência no controle de produtos em seu negócio.</p>
+            </div>
+            <div>
+                <img class="icones" src="./img/icones/sistema/entrega_pdv.svg" alt="Entrega PDV">
+                <h3 class="font-2-card">Pedido de Entrega</h3>
+                <p class="font-2-text">Facilite o processo de entrega com a funcionalidade de Pedido de Entrega, proporcionando uma gestão eficiente e rastreabilidade nas operações logísticas do seu negócio.</p>
+            </div>
+            <div>
+                <img class="icones" src="./img/icones/sistema/conexao_off.svg" alt="Conexão off-line">
+                <h3 class="font-2-card">Trabalha Off-line</h3>
+                <p class="font-2-text">Facilite o processo de entrega com a funcionalidade de Pedido de Entrega, proporcionando uma gestão eficiente e rastreabilidade nas operações logísticas do seu negócio.</p>
+            </div>            
+        </div>
+        <button onclick="verMais()" class="botao" id="botaoSistema">Ver Mais</button>
+    </article>
+    
+    <article class="vantagens-bg">
+        <div class="vantagens container" id="vantagens">
+            <img src="./img/geral/vantagens.jpg" alt="Vantagens do sistema Erion">
+            <div>
+                <span class="tag">Vantagens</span>
+                <h3 class="font-1-sub cor-08"><span class="cor-06">Vantagens</span> de adquirir<br>nosso sistema</h3>
+                <ul class="font-2-text">
+                    <li>Envio mensal de XMLs para seu contador</li>
+                    <li>Passo a passo sobre o sistema em texto e vídeo</li>
+                    <li>Aceitamos sua sugestão de melhoria</li>
+                    <li>Baixo tempo de resposta no atendimento</li>
+                    <li>Acesso remoto para solução de problemas</li>
+                </ul>
+            </div>           
+        </div>
+    </article>
+    
+    <article class="segmentos container" id="segmentos">
+        <span class="tag">Segmentos</span>
+        <h2 class="font-1-sub cor-08">Alguns dos <span class="cor-06">segmetos</span> que<br>atendemos</h2>
+        <div class="segmentos-card">
+            <div>
+                <img src="./img/icones/segmentos/comerciais.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">Comerciais</h3>                
+            </div>
+            <div>
+                <img src="./img/icones/segmentos/agropecuarias.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">Agropecuárias</h3>                
+            </div>
+            <div>
+                <img src="./img/icones/segmentos/eletrica-automotiva.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">Elétrica Automotiva</h3>                
+            </div>
+            <div>
+                <img src="./img/icones/segmentos/construcao.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">Lojas de Construção</h3>                
+            </div>
+            <div>
+                <img src="./img/icones/segmentos/roupas.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">Lojas de Roupas</h3>                
+            </div>
+            <div>
+                <img src="./img/icones/segmentos/elétricas.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">Elétricas</h3>                
+            </div>
+            <div>
+                <img src="./img/icones/segmentos/saloes-beleza.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">Salões de Beleza</h3>                
+            </div>
+            <div>
+                <img src="./img/icones/segmentos/locadoras.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">Locadoras</h3>                
+            </div>
+            <div>
+                <img src="./img/icones/segmentos/farmacias.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">Farmácias</h3>                
+            </div>
+            <div>
+                <img src="./img/icones/segmentos/papelarias.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">Papelarias</h3>                
+            </div>
+            <div>
+                <img src="./img/icones/segmentos/panificadoras.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">Panificadoras</h3>                
+            </div>
+            <div>
+                <img src="./img/icones/segmentos/vidracarias.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">Vidraçarias</h3>                
+            </div>
+        </div>        
+    </article>
+    
+    <section class="cliente-bg" id="clientes">
+        <div class="cliente container">
+            <div>
+                <span class="tag cor-00">Clientes</span>
+                <h2 class="font-1-sub cor-00">Veja o que nossos <span class="cor-06">clientes</span> estão<br>comentando</h2>
+                <p class="depoimento font-3 cor-00">O sistema Erion foi a melhor opção para a minha empresa por ter diversos recursos e um ótimo custo benefício.</p>
+                <p class="assinatura font-4 cor-00">Carlos Alexandre - JC Cyber</p>
+            </div>
+            <div>
+                <img src="./img/geral/cliente.jpg" alt="Clientes Erion">
+            </div>
+        </div>
+    </section>
+   
+    <div class="contato container" id="contato">
+        <span class="tag">Contato</span>
+        <h2 class="font-1-sub cor-08">Entre em <span class="cor-06">contato</span> conosco</h2>
+        <div class="contato-info endereco-bg">
+            <section class="ponto">
+                <h3 class="font-2-card cor-00">Ponto Físico</h3>
+                <div class="contato-icon font-2-text cor-00">
+                    <p>Av Manfredo Barata</p>
+                    <p>R. Aeroporto Velho</p>
+                    <p>Itaituba-PA</p>
+                    <p>68181-005</p>
+                </div>    
+                <address class="mail-icon font-2-text cor-00">
+                    <a href="mailto:suportecanan@hotmail.com">suportecanan@hotmail.com</a>                    
+                </address>
+                <address class="tel-icon font-2-text cor-00">
+                    <a href="tel: #+5593991216594">+55 93 99121-6594</a>
+                </address>
+                <div class="redes">
+                    <a href="https://api.whatsapp.com/send?phone=5593991216594&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20mais%20sobre%20o%20sistema%20Erion..." target="_blank" rel="noopener noreferrer"><img src="./img/icones/redes/whatsapp.svg" alt="whatsapp"></a>
+                    <a href="https://www.instagram.com/erionsistemas/" target="_blank" rel="noopener noreferrer"><img src="./img/icones/redes/instagram.svg" alt="Instagram"></a>
+                </div>
+            </section>
+            <section class="contato-formulario" aria-label="Formulário">
+                <form class="form" action="https://formsubmit.co/ajax/suportecanan@hotmail.com" method="POST" data-form>
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" required placeholder="Seu nome">
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="text" name="telefone" id="telefone" required placeholder="(93) 99999-9999">                        
+                    </div>
+                    <div class="col-2">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" required placeholder="contato@gmail.com" required>                        
+                    </div>
+                    <div class="col-2">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" required  rows="5" placeholder="Informe o segmento da sua empresa"></textarea>
+                    </div>
+                    <button type="submit" data-button class="botao col-2">Enviar Mensagem</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    
+    <footer class="footer-bg">
+        <div class="footer container cor-00">
+            <div class="quem-somos">
+                <h3 class="font-1-sub">ERION SISTEMAS</h3>
+                <h3 class="font-2-card cor-02">QUEM SOMOS?</h3>
+                <p class="font-2-text cor-03">
+                    Somos uma empresa brasileira, com sede no Estado do Pará, dedicada ao desenvolvimento de softwares para a gestão de negócios, atuando no mercado há mais de 4 anos. Nosso compromisso é proporcionar aos nossos clientes tecnologia que simplifique as operações do dia a dia das empresas.
+                    <br><br>
+                    Nossa missão é oferecer soluções que permitam aos empresários uma visão abrangente de seus negócios, abrangendo desde o controle de recursos até a emissão de documentos fiscais. Dessa forma, buscamos otimizar processos, reduzindo tempo e custos associados a tarefas burocráticas manuais que impactam negativamente a produtividade.
+                    <br><br>
+                    Acreditamos que a tecnologia pode ser uma aliada poderosa para impulsionar o crescimento empresarial, e é por isso que nos dedicamos a desenvolver softwares que agregam valor, promovendo eficiência e melhorando a experiência operacional para nossos clientes.
+                </p>
+            </div>
+            <div class="footer-info">
+                <div>
+                    <div class="font-1-nav">
+                        <h3 class="font-1-sub">Contatos</h3>
+                        <address>
+                            <a href="mailto:suportecanan@hotmail.com">suportecanan@hotmail.com</a>                    
+                        </address>
+                        <address>
+                            <a href="tel: #+5593991216594">+55 93 99121-6594</a>
+                        </address>
+                    </div>
+                    <div class="font-1-nav">
+                        <p>Av Manfredo Barata</p>
+                        <p>R. Aeroporto Velho</p>
+                        <p>Itaituba-PA / 68181-005</p>                        
+                    </div>
+                    <div class="redes-footer">
+                        <a href="https://api.whatsapp.com/send?phone=5593991216594&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20mais%20sobre%20o%20sistema%20Erion..." target="_blank" rel="noopener noreferrer"><img src="./img/icones/redes/whatsapp.svg" alt="whatsapp"></a>
+                        <a href="https://www.instagram.com/erionsistemas/" target="_blank" rel="noopener noreferrer"><img src="./img/icones/redes/instagram.svg" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-1-sub">INFORMAÇÕES</h3>
+                <ul class="font-1-nav">
+                    <li><a href="#introducao">Inicio</a></li>
+                    <li><a href="#sistema">Sistema</a></li>
+                    <li><a href="#vantagens">Vantagens</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>    
+    <a href="https://api.whatsapp.com/send?phone=5593991216594&text=Olá,%20gostaria%20de%20conhecer%20mais%20sobre%20o%20sistema%20Erion..." target="_blank" rel="noreferrer noopener" id="waurlsite" class="bt-whatsApp wa-style" target="_blank">
+    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMjYxOSA1MDYgMTIwIDEyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzI3ZDA0NTsKICAgICAgfQoKICAgICAgLmNscy0yLCAuY2xzLTUgewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgc3Ryb2tlOiAjZmZmOwogICAgICAgIHN0cm9rZS13aWR0aDogNXB4OwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgc3Ryb2tlOiBub25lOwogICAgICB9CiAgICA8L3N0eWxlPjwvZGVmcz48ZyBkYXRhLW5hbWU9Ikdyb3VwIDM2IiBpZD0iR3JvdXBfMzYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIzMDAgNzMpIj48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjYwIiBjeT0iNjAiIGRhdGEtbmFtZT0iRWxsaXBzZSAxOCIgaWQ9IkVsbGlwc2VfMTgiIHI9IjYwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMTkgNDMzKSIvPjxnIGRhdGEtbmFtZT0iR3JvdXAgMzUiIGlkPSJHcm91cF8zNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjU0IDM4NikiPjxnIGRhdGEtbmFtZT0iR3JvdXAgMzQiIGlkPSJHcm91cF8zNCI+PGcgY2xhc3M9ImNscy0yIiBkYXRhLW5hbWU9IkVsbGlwc2UgMTkiIGlkPSJFbGxpcHNlXzE5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NCA3NSkiPjxjaXJjbGUgY2xhc3M9ImNscy00IiBjeD0iMzEuNSIgY3k9IjMxLjUiIHI9IjMxLjUiLz48Y2lyY2xlIGNsYXNzPSJjbHMtNSIgY3g9IjMxLjUiIGN5PSIzMS41IiByPSIyOSIvPjwvZz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xNDI0LDE5MWwtNC42LDE2LjMsMTYuOS00LjcuOS01LjItMTEsMy41LDIuOS0xMC41WiIgZGF0YS1uYW1lPSJQYXRoIDEyNiIgaWQ9IlBhdGhfMTI2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTMyNSAtNjgpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTI2Niw5MGMwLS4xLDMuNS0xMS43LDMuNS0xMS43bDguNCw3LjlaIiBkYXRhLW5hbWU9IlBhdGggMTI3IiBpZD0iUGF0aF8xMjciIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMTY1IDQzKSIvPjwvZz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xNDM5LjMsMTYwLjZhOS40LDkuNCwwLDAsMC0zLjksNi4xYy0uNSwzLjksMS45LDcuOSwxLjksNy45YTUwLjg3Niw1MC44NzYsMCwwLDAsOC42LDkuOCwzMC4xODEsMzAuMTgxLDAsMCwwLDkuNiw1LjEsMTEuMzc4LDExLjM3OCwwLDAsMCw2LjQuNiw5LjE2Nyw5LjE2NywwLDAsMCw0LjgtMy4yLDkuODUxLDkuODUxLDAsMCwwLC42LTIuMiw1Ljg2OCw1Ljg2OCwwLDAsMCwwLTJjLS4xLS43LTcuMy00LTgtMy44cy0xLjMsMS41LTIuMSwyLjYtMS4xLDEuNi0xLjksMS42LTQuMy0xLjQtNy42LTQuNGExNS44NzUsMTUuODc1LDAsMCwxLTQuMy02cy42LS43LDEuNC0xLjhhNS42NjQsNS42NjQsMCwwLDAsMS4zLTIuNGMwLS41LTIuOC03LjYtMy41LTcuOUExMS44NTIsMTEuODUyLDAsMCwwLDE0MzkuMywxNjAuNloiIGRhdGEtbmFtZT0iUGF0aCAxMjgiIGlkPSJQYXRoXzEyOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzMjYuMzMyIC02OC40NjcpIi8+PC9nPjwvZz48L3N2Zz4=" alt="whatsapp" width="60px">
+    </a>    
+    <div id="msg1" class="whatsapp">Fale conosco</div>
+</body>
+<script defer src="./js/script.js"></script>
+<script defer src="./js/app.js"></script>
+</html>

@@ -1,0 +1,72 @@
+.vantagens-bg{
+    background-color: var(--cor-01);
+}
+.vantagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 128px;
+    padding-top: 60px;
+}
+
+.vantagens img{
+    object-fit: cover;
+    width: 100%;
+    height: 420px;
+    min-width: 280px;
+}
+
+.vantagens div {
+    text-align: center;
+}
+
+.vantagens h3{
+    padding-top: 20px;
+    text-align: left;
+}
+
+.vantagens ul {
+    display: grid;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    position: relative;
+    text-align: left;
+}
+
+.vantagens li::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../../img/icones/vantagens/visto.svg);
+    position: absolute;
+    margin-left: -21px;
+}
+
+@media (max-width:930px){
+    .vantagens{
+        gap: 40px;
+    }
+}
+
+@media (min-width:730px){
+    .vantagens .tag{
+        margin-top: 0px;
+    } 
+
+}
+
+@media (max-width:730px){
+    .vantagens{
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    .vantagens ul{
+        margin-left: 21px;
+    }   
+
+    .vantagens img{       
+        min-width: auto;
+    }
+    
+}

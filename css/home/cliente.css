@@ -1,0 +1,104 @@
+.cliente-bg{
+    background-color: var(--cor-07);
+    margin-top: 80px;
+}
+
+.cliente {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 40px;
+    position: relative;  
+    box-sizing: border-box;  
+}
+
+.cliente img{
+    object-fit: cover;
+    width: 100%;
+    min-width: 280px;
+    height: 100%;
+}
+
+.cliente h2, p {
+    text-align: left;
+}
+
+.assinatura {
+    margin-top: 60px;
+    padding-bottom: 80px;
+    text-align: right;
+}
+
+.cliente h2 {
+    margin-bottom: 80px;
+}
+
+.depoimento:before{
+    content: "";
+    display: inline-block;
+    width: 46px;
+    height: 32px;
+    background: url(../../img/icones/aspas/top.svg) no-repeat;
+    position: absolute;
+    margin-left: -50px;
+    z-index: 999;
+}
+
+.depoimento:after{
+    content: "";
+    display: inline-block;
+    width: 46px;
+    height: 32px;
+    background: url(../../img/icones/aspas/bottom.svg) no-repeat;
+    position: absolute; 
+    margin-left: 10px;   
+    margin-top: 20px;        
+    z-index: 999;
+}
+
+@media (max-width:1200px){
+    .depoimento {
+        font-size: 1.75rem;
+    }
+    .assinatura {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width:800px){
+    .cliente{
+        grid-template-columns: 1fr;
+        gap:0px
+    }
+
+    .cliente h2{
+        margin-bottom: 60px;
+    }
+
+    .depoimento{
+        text-align: left;
+    }
+
+    .assinatura {
+        padding-bottom: 40px;        
+    }
+
+    .cliente img{
+        min-width: auto;
+        max-height: 420px;
+        padding-bottom: 60px;
+    }
+
+    .depoimento:before{
+        content: "";
+        display: inline-block;
+        width: 46px;
+        height: 32px;
+        background: url(../../img/icones/aspas/top.svg) no-repeat;
+        position: absolute;       
+        margin-top: -30px;
+        margin-left: -20px;
+        z-index: 999;
+    }
+}
+

@@ -1,0 +1,179 @@
+.contato {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contato h2{
+    padding-bottom: 40px;
+}
+
+.endereco-bg{
+    background-color: var(--cor-06);
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.contato-info{
+    display: grid;
+    grid-template-columns: 1fr 3fr;   
+    max-width: 1200px;   
+    margin: 0 auto;
+}
+
+.ponto {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px;
+    text-align: left;
+    position: relative;
+}
+
+.ponto p{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contato-icon::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 14px;
+    background: url(../../img/icones/contato/location.svg) no-repeat;
+    position: absolute;
+    margin-left: -18px;
+    z-index: 999;    
+}
+
+.contato-icon{
+    margin-left: 18px;
+}
+
+.ponto address > a{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.mail-icon::before{
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: url(../../img/icones/contato/envelope.svg) no-repeat;
+    position: absolute;
+    margin-left: -20px; 
+    z-index: 999;
+}
+
+.mail-icon{
+    margin-left: 20px;
+}
+
+.tel-icon::before{
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: url(../../img/icones/contato/phone.svg) no-repeat;
+    position: absolute;
+    margin-left: -20px; 
+    z-index: 999;
+}
+
+.tel-icon{
+    margin-left: 20px;
+}
+
+.redes {
+    display: flex;
+    gap: 30px;
+}
+
+.redes img {
+    height: 32px;
+    width: 32px;
+    color: var(--cor-01);
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    
+}
+
+.form label{
+    display: block;
+    font: 400 1rem/1.5 'Poppins', sans-serif;
+    color: var(--cor-01);
+    margin-bottom: 4px;
+}
+
+.form .col-2 {
+    grid-column: span 2;
+}
+
+.form input[type="text"], .form input[type="email"], .form textarea{
+    font: 400 1rem/1.5 'Roboto', sans-serif;
+    background: var(--cor-01);
+    border: 1px solid var(--cor-02);
+    padding: 12px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form input[type="text"]:focus, .form input[type="email"]:focus, .form textarea:focus{
+    outline:none;
+    border-color: var(--cor-06);
+    background: var(--cor-00);
+    box-shadow: 0 0 0 2px var(--cor-07);
+}
+
+.contato-formulario{
+    background-color: var(--cor-08);
+    border-radius: 0 5px 5px 0;    
+}
+
+
+.contato-formulario{    
+    text-align: left;
+    padding: 40px;
+}
+
+.contato .botao{
+    margin-bottom: 40px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background: #555b69;
+}
+
+@media (max-width: 1000px){
+    .form {
+        grid-template-columns: 1fr;
+    }
+    .form .col-2 {
+        grid-column: span 1;
+    }
+    
+}
+
+@media (max-width: 800px){
+    .ponto {
+        padding: 20px;
+    }
+    .contato-formulario{          
+        padding: 20px;
+    }   
+}
+
+@media (max-width: 630px){
+    .contato-info{
+        grid-template-columns: 1fr;
+    }
+    .ponto{
+        display: none;
+    }
+}
